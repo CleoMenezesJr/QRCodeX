@@ -5,9 +5,9 @@ sg.theme('DarkBlue')
 
 layout = [
     [sg.Text(f'QRcodeX', size=(25,1), justification='center', font=('Helvetica', 14))],
-    [sg.Text('Link', font=('Helvetica', 10)), sg.InputText(key='input', size=(35,1), justification='r', font=('Helvetica', 10))],
-    [sg.Button('Gerar', font=('Helvetica', 10)), sg.Button('Fechar', font=('Helvetica', 10))],
-    [sg.Image(r'C:\Users\Junio\PycharmProjects\QRCODE_Generator\qrcreated.PNG', key=2)]
+    [sg.Text('Link', font=('Helvetica', 10)), sg.InputText(key='input', size=(35,1), justification='r', font=('Lucida faz', 10))],
+    [sg.Button('Gerar', font=('Helvetica', 10), size=(17,3), button_color=('black', 'light blue')), sg.Button('Fechar', font=('Britannic', 10), size=(17,3), button_color=('black', 'light blue'))],
+    [sg.Image(r'C:\Users\Junio\PycharmProjects\QRCODE_Generator\Images\qrcreated.PNG', key=2, size=(290, 300))]
 
 ]
 window = sg.Window('QRcodeX - Gerador de QRCode', layout, grab_anywhere=True, alpha_channel=0.9)
